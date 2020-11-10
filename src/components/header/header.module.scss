@@ -1,0 +1,27 @@
+.Header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  background-color: blue;
+}
+
+.LogoText {
+  font-size: 30px;
+  margin: 0;
+  color: whitesmoke;
+}
+
+.WrapperSearchAndLogo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 98%;
+  margin: 0 50px 0 50px;
+}
+
+.WrapperNavigation {
+  display: flex;
+  align-items: center;
+  width: 98%;
+}

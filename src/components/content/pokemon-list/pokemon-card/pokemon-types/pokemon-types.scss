@@ -1,0 +1,246 @@
+.ribbon{
+  width:100px;
+  height:40px;
+  background:#3F51B5;
+  position:relative;
+  color:#eee;
+  text-align:center;
+  line-height:40px;
+  font-size:20px;
+}
+.ribbon:after{
+  content:"";
+  width:0;
+  height:0;
+  position:absolute;
+  top: 0%; left:99%;
+  border:2px solid transparent;
+  border-top:2px solid #3F51B5;
+  border-bottom:20px solid transparent;
+  border-right:20px solid tranaparent;
+  border-left:30px solid #3F51B5;
+}
+
+.ribbon:before{
+  content:"";
+  width:0;
+  height:0;
+  position:absolute;
+  top:0%; left:66%;
+  z-index:100;
+  border:2px solid transparent;
+  border-top:20px solid transparent;
+  border-bottom:20px solid #3F51B5;
+  border-right:35px solid transparent;
+  border-left:30px solid transparent;
+}
+
+.ribbon-left{
+  display:block;
+  width:10px;
+  height:40px;
+  background:#3F51B5;
+  position:absolute;
+  left:-9px; top:0;
+}
+
+.ribbon-left:after{
+  content:"";
+  position:absolute;
+  top:30px;left:-10px;
+  border:10px solid transparent;
+  border-top:10px solid transparent;
+  border-bottom:10px solid transparent;
+  border-left:10px solid transparent;
+  border-right:10px solid #3F51B5;
+}
+
+.wrapper-ribbon-right {
+  transform: rotate(90deg);
+  position: absolute;
+  margin-top: 30px;
+  margin-right: -210px;
+}
+
+.wrapper-ribbon-left {
+  transform: rotate(90deg);
+  // transform: scale(-1, 1);
+  position: absolute;
+  margin-top: 30px;
+  margin-right: 210px;
+  
+  .ribbon-left:after{
+    top: -10px;
+  }
+
+}
+
+.grass {
+  background-color:#4AA80E;
+  &:before {
+    border-bottom-color: #4AA80E;
+  }
+  &:after {
+    border-left-color: #4AA80E;
+    border-top: #4AA80E;
+  }
+  .ribbon, .ribbon-left {
+    background-color: #4AA80E;
+  }
+
+  .ribbon:after, .ribbon:before, .ribbon-left:after {
+    border-right-color: #4AA80E;
+  }
+
+  .ribbon:before {
+    border-left-color:#4AA80E;
+  }
+}
+
+.fire {
+  background-color: #D82121;
+
+  &:before {
+    border-bottom-color: #D82121;
+  }
+
+  &:after {
+    border-left-color: #D82121;
+    border-top: #D82121;
+  }
+
+  .ribbon, .ribbon-left {
+    background-color: #D82121;
+  }
+
+  .ribbon:after, .ribbon:before, .ribbon-left:after {
+    border-right-color: #D82121;
+  }
+
+  .ribbon:before {
+    border-left-color: #D82121;
+  }
+}
+
+.flying {
+  background-color: #62C4C4;
+  &:before {
+    border-bottom-color: #62C4C4;
+  }
+
+  &:after {
+    border-left-color: #62C4C4;
+    border-top:#62C4C4;
+  }
+
+  .ribbon, .ribbon-left {
+    background-color: #62C4C4;
+  }
+
+  .ribbon:after, .ribbon:before, .ribbon-left:after {
+    border-right-color: #62C4C4;
+  }
+
+  .ribbon:before {
+    border-left-color: #62C4C4;
+  }
+}
+
+.poison {
+    background-color: #2C2C2C;
+    &:before {
+      border-bottom-color: #2C2C2C; 
+    }
+  
+    &:after {
+      border-left-color: #2C2C2C;
+      border-top: #2C2C2C;
+    }
+  
+    .ribbon, .ribbon-left {
+      background-color: #2C2C2C;
+    }
+  
+    .ribbon:after, .ribbon:before, .ribbon-left:after {
+      border-right-color: #2C2C2C;
+    }
+  
+    .ribbon:before {
+      border-left-color: #2C2C2C;
+    }
+}
+
+.bug {
+  background-color: #FF6E32;
+  &:before {
+    border-bottom-color: #FF6E32;
+  }
+
+  &:after {
+    border-left-color: #FF6E32;
+    border-top: #FF6E32;
+  }
+
+  .ribbon, .ribbon-left {
+    background-color: #FF6E32;
+  }
+
+  .ribbon:after, .ribbon:before, .ribbon-left:after {
+    border-right-color: #FF6E32;
+  }
+
+  .ribbon:before {
+    border-left-color: #FF6E32;
+  }
+}
+
+.normal {
+  background-color: #A95FCA;
+  &:before {
+    border-bottom-color: #A95FCA;
+  }
+
+  &:after {
+    border-left-color: #A95FCA;
+    border-top:#A95FCA;
+  }
+
+  .ribbon, .ribbon-left {
+    background-color:#A95FCA;
+  }
+
+  .ribbon:after, .ribbon:before, .ribbon-left:after {
+    border-right-color:#A95FCA;
+  }
+
+  .ribbon:before {
+    border-left-color: #A95FCA;
+  }
+}
+
+.ice {
+  background-color: #C6EAFF;
+  &:before {
+    border-bottom-color:#C6EAFF;
+  }
+
+  &:after {
+    border-left-color: #C6EAFF;
+    border-top:#C6EAFF;
+  }
+
+  .ribbon, .ribbon-left {
+    background-color: #C6EAFF;
+  }
+
+  .ribbon:after, .ribbon:before, .ribbon-left:after {
+    border-right-color:#C6EAFF;
+  }
+
+  .ribbon:before {
+    border-left-color: #C6EAFF;
+  }
+
+  color: #272727;
+
+}

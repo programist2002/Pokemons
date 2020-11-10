@@ -1,0 +1,14 @@
+.Wrapper {
+    display: flex;  
+}
+
+.WrapperCard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.WrapperPagination {
+  margin: 65px 0 30px 0;
+}
